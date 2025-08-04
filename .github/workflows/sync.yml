@@ -14,11 +14,9 @@ on:
         default: false
 
 env:
-  DEFAULT_SYNC_BRANCH: main                       # 默认分支（可通过 secret 覆盖）
-  UPSTREAM_SYNC_REPO: SnapDrop/snapdrop  # ✅ 上游仓库（提取为全局变量）
-
-
-  UPSTREAM_SYNC_BRANCH: main                      # 上游分支
+  DEFAULT_SYNC_BRANCH: master                       # 默认分支（可通过 secret 覆盖）
+  UPSTREAM_SYNC_REPO:  SnapDrop/snapdrop  # ✅ 上游仓库（提取为全局变量）
+  UPSTREAM_SYNC_BRANCH: master                      # 上游分支
 
 jobs:
   sync-upstream:
